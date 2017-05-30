@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    script(type='text/javascript').
+        var dojoConfig = {
+            baseUrl: '/js',
+            packages: [
+                {name: 'dijit', location: 'dojo/dijit'},
+                {name: 'dojo', location: 'dojo/dojo'},
+                {name: 'dojox', location: 'dojo/dojox'},
+                {name: 'myapp', location: 'app'}
+            ]
+        };
+    link(href='/js/dojo/dijit/themes/claro/claro.css', rel='stylesheet')
+    script(type='text/javascript', src='/js/dojo/dojo/dojo.js').
+    script(type='text/javascript').
+        require(['myapp/app'], function (app) { app(); });

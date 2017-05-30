@@ -1,0 +1,20 @@
+<div class='todoItem' style='clear:both;'>
+    <button style='float:left;'
+            data-dojo-attach-point='doneButton'
+            data-dojo-type="dijit/form/ToggleButton"
+            data-dojo-attach-event="onClick:_onDone"
+            data-dojo-props="iconClass:'dijitCheckBoxIcon', showLabel: false">
+        Done
+    </button>
+    <div style='float:left;'
+         data-dojo-attach-point='content'
+         data-dojo-type='dijit/layout/ContentPane'></div>
+    <button style='float:left;'
+            data-dojo-attach-point='deleteButton'
+            data-dojo-type="dijit/form/Button"
+            data-dojo-props="iconClass:'dijitEditorIcon dijitEditorIconDelete', showLabel: false"
+            data-dojo-attach-event="onClick:_onDelete"
+            type="button">
+        delete
+    </button>
+</div>

@@ -1,0 +1,35 @@
+{
+  "name": "todos",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "test": "NODE_ENV=test mocha test/test.js --reporter spec"
+  },
+  "dependencies": {
+    "express": "3.7.0",
+    "jade": "*",
+    "passport": "*",
+    "passport-google-oauth": "*",
+    "passport-local": "*",
+    "mongoose": "*",
+    "connect-mongo": "*",
+    "mocha": "*",
+    "supertest": "*"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arvelt/hello-nodejs.git"
+  },
+  "author": "Keisuke Ota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvelt/hello-nodejs/issues"
+  },
+  "homepage": "https://github.com/arvelt/hello-nodejs",
+  "engines": {
+    "node": "0.10.28"
+  }
+}

@@ -1,0 +1,14 @@
+<div class='todoInput' style='clear:both;'>
+    <input  style='float:left;' type="text"
+        data-dojo-attach-point='content'
+        data-dojo-type="dijit/form/TextBox"
+        data-dojo-props="trim:true, propercase:true"/>
+    <button style='float:left;'
+            data-dojo-attach-point='addButton'
+            data-dojo-type="dijit/form/Button"
+            data-dojo-props="iconClass:'dijitEditorIcon dijitEditorIconNewPage', showLabel: false"
+            data-dojo-attach-event="onClick:onTodoAdd"
+            type="button">
+        add
+    </button>
+</div>
